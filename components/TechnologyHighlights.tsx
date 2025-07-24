@@ -7,17 +7,19 @@ import CountUp from 'react-countup';
 
 export default function TechnologyHighlights() {
   const stats = [
-    { number: 15, label: '특허 및 지식재산권', icon: 'ri-award-line' },
-    { number: 10, label: '연구개발 프로젝트', icon: 'ri-flask-line' },
-    { number: 25, label: '기술 파트너십', icon: 'ri-team-line' },
-    { number: 5, label: '연구시설', icon: 'ri-building-line' }
+    { number: 15, label: '특허 및 지식재산권', description: '혁신적인 기술력을 바탕으로 다수의 특허를 보유하고 있습니다.', icon: 'ri-award-line' },
+    { number: 10, label: '연구개발 프로젝트', description: '지속적인 R&D 투자로 미래 기술을 선도합니다.', icon: 'ri-flask-line' },
+    { number: 25, label: '기술 파트너십', description: '국내외 유수 기업 및 기관과 협력하고 있습니다.', icon: 'ri-team-line' },
+    { number: 5, label: '연구시설', description: '최첨단 연구 시설을 통해 기술 혁신을 가속화합니다.', icon: 'ri-building-line' }
   ];
 
   const technologies = [
     {
       title: '바이오플락 양식 기술',
       description: '미생물을 활용한 친환경 양식 시스템으로 수질 개선과 생산성 향상을 동시에 실현',
-      image: 'https://readdy.ai/api/search-image?query=Biofloc%20aquaculture%20technology%20system%20with%20microbial%20flocs%20in%20water%2C%20advanced%20filtration%20equipment%2C%20sustainable%20shrimp%20farming%20technology%2C%20clean%20blue%20water%20with%20biological%20treatment%20systems&width=500&height=300&seq=tech-1&orientation=landscape'
+      image: 'https://readdy.ai/api/search-image?query=Biofloc%20aquaculture%20technology%20system%20with%20microbial%20flocs%20in%20water%2C%20advanced%20filtration%20equipment%2C%20sustainable%20shrimp%20farming%20technology%2C%20clean%20blue%20water%20with%20biological%20treatment%20systems&width=500&height=300&seq=tech-1&orientation=landscape',
+      icon: 'ri-leaf-line',
+      bgColor: 'from-green-400 to-blue-500'
     },
     {
       title: '복합 유용 미생물 개발',
@@ -62,7 +64,8 @@ export default function TechnologyHighlights() {
     <section className="py-24 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white">
+          <p className="text-sm font-bold text-orange-500 tracking-widest uppercase">TECHNOLOGY</p>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mt-2">
             기술력으로 입증하는 혁신
           </h2>
           <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
@@ -70,7 +73,7 @@ export default function TechnologyHighlights() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-10 mb-24">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -79,47 +82,103 @@ export default function TechnologyHighlights() {
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.5 }}
               variants={statVariants}
-              className="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md"
+              className="text-center relative px-4"
             >
-              <div className="w-16 h-16 flex items-center justify-center bg-sky-100 dark:bg-sky-900/50 rounded-full mx-auto mb-4">
-                <i className={`${stat.icon} text-3xl text-sky-600 dark:text-sky-400`}></i>
+              {index < stats.length - 1 && (
+                <div className="hidden md:block absolute right-0 top-0 h-full w-px bg-gray-200 dark:bg-gray-700"></div>
+              )}
+              <div className="text-orange-500 text-5xl mb-4 flex justify-center items-center h-12">
+                <i className={stat.icon}></i>
               </div>
-              <div className="text-4xl lg:text-5xl font-bold text-sky-600 dark:text-sky-400 mb-2">
-                <CountUp end={stat.number} duration={2.5} suffix="+" />
-              </div>
-              <div className="text-gray-700 dark:text-gray-300 font-medium">{stat.label}</div>
+              <p className="text-6xl font-bold text-orange-500">
+                <CountUp end={stat.number} duration={2.5} enableScrollSpy scrollSpyOnce />
+              </p>
+              <div className="w-8 h-0.5 bg-gray-400 mx-auto my-6"></div>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white">{stat.label}</h3>
+              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">{stat.description}</p>
             </motion.div>
           ))}
         </div>
 
-        <div className="space-y-16">
-          {technologies.map((tech, index) => (
+        <div className="mt-32">
+          <div className="text-center max-w-2xl mx-auto mb-24">
+            <h3 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white">
+              핵심 기술 역량
+            </h3>
+            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              컬리버는 혁신적인 기술을 통해 지속 가능한 미래를 만들어갑니다.
+            </p>
+          </div>
+
+          <div className="relative min-h-[1000px] md:min-h-[900px]">
+            {/* Technology 1 */}
             <motion.div
-              key={index}
-              initial="offscreen"
-              whileInView="onscreen"
+              className="absolute top-0 left-0 md:left-[10%]"
+              initial={{ opacity: 0, y: 50, rotate: -15 }}
+              whileInView={{ opacity: 1, y: 0, rotate: -5 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.3 }}
-              variants={techVariants}
-              className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-10`}
             >
-              <div className="md:w-1/2">
-                <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl">
-                  <Image
-                    src={tech.image}
-                    alt={tech.title}
-                    layout="fill"
-                    objectFit="cover"
-                  />
-                </div>
+              <div className="relative w-56 h-80 md:w-64 md:h-96">
+                <Image src={technologies[0].image} alt={technologies[0].title} layout="fill" objectFit="cover" className="rounded-full shadow-2xl"/>
               </div>
-              <div className="md:w-1/2">
-                <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">{tech.title}</h3>
-                <p className="text-lg text-gray-600 dark:text-gray-300">
-                  {tech.description}
-                </p>
-              </div>
+              <motion.div 
+                className="absolute bottom-10 -right-24 w-64 p-5 bg-white/60 dark:bg-gray-800/60 backdrop-blur-md rounded-xl shadow-lg"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+              >
+                <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{technologies[0].title}</h4>
+                <p className="text-sm text-gray-700 dark:text-gray-300">{technologies[0].description}</p>
+              </motion.div>
             </motion.div>
-          ))}
+
+            {/* Technology 2 */}
+            <motion.div
+              className="absolute top-60 right-0 md:right-[10%]"
+              initial={{ opacity: 0, y: 50, rotate: 15 }}
+              whileInView={{ opacity: 1, y: 0, rotate: 5 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <div className="relative w-56 h-80 md:w-64 md:h-96 ml-auto">
+                <Image src={technologies[1].image} alt={technologies[1].title} layout="fill" objectFit="cover" className="rounded-full shadow-2xl"/>
+              </div>
+              <motion.div 
+                className="absolute top-16 -left-24 w-64 p-5 bg-white/60 dark:bg-gray-800/60 backdrop-blur-md rounded-xl shadow-lg"
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+              >
+                <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{technologies[1].title}</h4>
+                <p className="text-sm text-gray-700 dark:text-gray-300">{technologies[1].description}</p>
+              </motion.div>
+            </motion.div>
+
+            {/* Technology 3 */}
+            <motion.div
+              className="absolute top-[550px] left-0 md:left-[20%]"
+              initial={{ opacity: 0, y: 50, rotate: -15 }}
+              whileInView={{ opacity: 1, y: 0, rotate: -5 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <div className="relative w-56 h-80 md:w-64 md:h-96">
+                <Image src={technologies[2].image} alt={technologies[2].title} layout="fill" objectFit="cover" className="rounded-full shadow-2xl"/>
+              </div>
+              <motion.div 
+                className="absolute bottom-10 -right-24 w-64 p-5 bg-white/60 dark:bg-gray-800/60 backdrop-blur-md rounded-xl shadow-lg"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.7 }}
+              >
+                <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{technologies[2].title}</h4>
+                <p className="text-sm text-gray-700 dark:text-gray-300">{technologies[2].description}</p>
+              </motion.div>
+            </motion.div>
+            
+            {/* Decorative elements can be kept or removed */}
+          </div>
         </div>
 
         <div className="text-center mt-20">

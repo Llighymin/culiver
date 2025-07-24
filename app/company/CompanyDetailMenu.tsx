@@ -3,8 +3,12 @@ import TabMenu from "@/components/ui/TabMenu";
 const CompanyDetailMenu = () => {
   const menuList = [
     {
-      title: "컬리버의 성과",
+      title: "회사개요",
       tabId: "performance",
+    },
+    {
+      title: "CEO 인사말",
+      tabId: "ceo-message",
     },
     {
       title: "비전 & 미션",
@@ -15,8 +19,12 @@ const CompanyDetailMenu = () => {
       tabId: "history",
     },
     {
-      title: "더 자세한 정보",
-      tabId: "more-info",
+      title: "조직도",
+      tabId: "members",
+    },
+    {
+      title: "인증 및 수상",
+      tabId: "awards",
     },
   ];
 

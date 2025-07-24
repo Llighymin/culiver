@@ -16,7 +16,7 @@ export default function CompanyHero() {
           지속 가능한 친환경 농수산물 생산과 지역사회 상생을 통해 국내·외 시장을
           선도하는 글로벌 새우양식 전문 기업입니다.
         </p>
-        <div className="flex items-center justify-center space-x-4">
+        {/* <div className="flex items-center justify-center space-x-4">
           <Link
             href="/company/ceo"
             className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors whitespace-nowrap cursor-pointer"
@@ -29,7 +29,7 @@ export default function CompanyHero() {
           >
             회사개요
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

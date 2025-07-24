@@ -54,7 +54,7 @@ const TabMenu = ({
   };
 
   return (
-    <div className={`${className}`}>
+    <div className={`overflow-x-auto ${className}`}>
       <nav
         className={`flex space-x-8 ${
           variant === "underline" ? "border-b border-gray-200" : ""
@@ -64,7 +64,9 @@ const TabMenu = ({
           <button
             key={tab.tabId}
             onClick={() => handleTabClick(tab.tabId)}
-            className={getTabStyles(currentTab === tab.tabId)}
+            className={`${getTabStyles(
+              currentTab === tab.tabId
+            )} whitespace-nowrap`}
           >
             <div
               className={variant === "underline" ? "text-left" : "text-center"}
