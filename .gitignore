@@ -41,3 +41,6 @@ next-env.d.ts
 
 # Sentry Config File
 .env.sentry-build-plugin
+
+# Firebase
+new-465206-firebase-adminsdk-fbsvc-a8805a7e33.json
