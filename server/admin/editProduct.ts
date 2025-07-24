@@ -1,7 +1,6 @@
 "use server";
 
 import { adminDb, firebaseAdmin } from "@/firebaseAdmin";
-import { ProductType } from "@/types/product";
 import { getStorage } from "firebase-admin/storage";
 import { cookies } from "next/headers";
 
@@ -51,8 +50,6 @@ export const deleteProductAction = async (
         message: "해당 제품이 존재하지 않습니다.",
       };
     }
-
-    const productData = productRef.data() as ProductType;
 
     await adminDb.collection("products").doc(data.productId).update({
       name: data.name,
