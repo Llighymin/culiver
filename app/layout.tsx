@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_KR, Roboto } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import PageLayout from "@/components/PageLayout";
 
 const notoSansKr = Noto_Sans_KR({
 	subsets: ["latin"],
@@ -17,8 +16,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-	title: "GreenWhale",
-	description: "GreenWhale",
+	title: "Culiver - (주)컬리버",
+	description: "Culiver - Sustainable Aquaculture Solutions",
 };
 
 export default function RootLayout({
@@ -31,9 +30,7 @@ export default function RootLayout({
 			<body
 				className={`${notoSansKr.variable} ${roboto.variable} font-sans text-nhn-black bg-white`}
 			>
-				<Header />
-				<main>{children}</main>
-				<Footer />
+				<PageLayout>{children}</PageLayout>
 			</body>
 		</html>
 	);
