@@ -1,0 +1,126 @@
+:root {
+    --nhn-blue: #006DFF;
+    --nhn-black: #1B1B1B;
+}
+
+body {
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+    color: var(--nhn-black);
+}
+
+.font-sans {
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+}
+
+.text-nhn-blue {
+    color: var(--nhn-blue);
+}
+
+header {
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+}
+
+.nav-link {
+    position: relative;
+    padding: 0 4px;
+    transition: color 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--nhn-blue);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-item:hover .nav-link {
+    color: var(--nhn-blue);
+}
+
+.nav-item:hover .nav-link::after {
+    width: 100%;
+}
+
+#hero-section #hero-title {
+    animation: text-fade-in 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes text-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#slide-progress {
+    animation: progress-bar 5s linear infinite;
+}
+
+@keyframes progress-bar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.service-tab {
+    padding: 1rem 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #888;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+    margin-bottom: -2px;
+}
+
+.service-tab:hover {
+    color: var(--nhn-blue);
+}
+
+.service-tab.active {
+    color: var(--nhn-black);
+    border-bottom-color: var(--nhn-black);
+}
+
+.service-panel {
+    display: none;
+    animation: content-fade-in 0.6s ease-out;
+}
+
+.service-panel.active {
+    display: block;
+}
+
+@keyframes content-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}

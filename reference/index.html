@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHN</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-nhn-black font-sans">
+
+    <header class="fixed top-0 left-0 right-0 z-50 h-20 bg-white/80 backdrop-blur-sm border-b border-gray-200 transition-all duration-300">
+        <div class="container mx-auto px-6 h-full flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <svg width="90" height="26" viewBox="0 0 90 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.474 25.13V.87h-6.14v17.228h-.278L10.37 8.163V.87H4.23v24.26h6.14V8.01h.278l8.686 9.935v7.185h6.14zM42.222 25.13V.87h-6.14v17.228h-.278l-8.686-9.935V.87h-6.14v24.26h6.14V8.01h.278l8.686 9.935v7.185h6.14zM62.06 25.13V.87H55.92v24.26h6.14zM84.09 25.13h6.14V.87h-6.14v10.932H69.46V.87h-6.14v24.26h6.14V14.01h14.63V25.13z" fill="#000"></path></svg>
+            </a>
+            <nav class="hidden lg:flex h-full items-center space-x-10 text-base font-bold">
+                <div class="nav-item h-full flex items-center"><a href="#" class="nav-link">NHN</a></div>
+                <div class="nav-item h-full flex items-center"><a href="#" class="nav-link">SERVICES</a></div>
+                <div class="nav-item h-full flex items-center"><a href="#" class="nav-link">PR</a></div>
+                <div class="nav-item h-full flex items-center"><a href="#" class="nav-link">IR</a></div>
+                <div class="nav-item h-full flex items-center"><a href="#" class="nav-link">ESG</a></div>
+                <div class="nav-item h-full flex items-center"><a href="https://careers.nhn.com/" class="nav-link" target="_blank">CAREERS</a></div>
+                <div class="nav-item h-full flex items-center"><a href="https://inside.nhn.com/br/index.nhn" class="nav-link" target="_blank">INSIDE NHN</a></div>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <div class="hidden md:flex items-center space-x-4 text-sm text-gray-500">
+                    <a href="#" class="hover:text-nhn-blue">한국어</a>
+                    <a href="#" class="text-nhn-blue font-bold">English</a>
+                    <a href="#" class="hover:text-nhn-blue">日本語</a>
+                </div>
+                 <button id="mobile-menu-button" class="lg:hidden p-2">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero-section" class="relative h-screen w-full overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="https://www.nhn.com/_next/image?url=https%3A%2F%2Fstatic.nhnent.com%2Fstatic%2Fsite%2Fcorp%2Fimages%2Fmain%2Fmask.png&w=3840&q=75" alt="mask" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center text-white">
+                    <h1 id="hero-title" class="text-6xl md:text-8xl font-bold tracking-tighter">Weaving New Play</h1>
+                </div>
+            </div>
+            <div id="hero-controls" class="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center space-x-4 text-white">
+                <span id="slide-counter" class="font-mono text-lg">01</span>
+                <div class="w-20 h-0.5 bg-white/30">
+                    <div id="slide-progress" class="h-full bg-white"></div>
+                </div>
+                <span class="font-mono text-lg text-white/50">03</span>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <h2 class="text-xl font-bold">PRESS RELEASES</h2>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:underline">NHN ‘다키스트 데이즈’, 최고 레벨 이용자 위한 신규 성장 요소 ‘생존자 레벨’ 도입</a></li>
+                        <li><a href="#" class="hover:underline">NHN 클라우드·NHN인재아이엔씨, ‘지방공기업 예산회계시스템’ 클라우드 전환 사업 수주… 사업 착수보고회 진행</a></li>
+                        <li><a href="#" class="hover:underline">NHN두레이, 국내 SaaS 최초 금융 내부망에 해외 리전 LLM 연동 이뤄냈다</a></li>
+                    </ul>
+                    <a href="#" class="flex items-center text-nhn-blue font-bold">more <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i></a>
+                </div>
+                <div class="space-y-4">
+                    <h2 class="text-xl font-bold">CAREERS</h2>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:underline">코미코 유통</a></li>
+                        <li><a href="#" class="hover:underline">와플랫 제휴 영업</a></li>
+                        <li><a href="#" class="hover:underline">게임플랫폼 Unity 개발</a></li>
+                    </ul>
+                    <a href="#" class="flex items-center text-nhn-blue font-bold">more <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i></a>
+                </div>
+                <div class="space-y-4">
+                    <h2 class="text-xl font-bold">STOCK</h2>
+                    <div class="flex items-baseline space-x-3">
+                        <span class="text-4xl font-bold text-nhn-blue">29,450</span>
+                        <span class="text-red-500 flex items-center"><i data-lucide="triangle" class="w-3 h-3 fill-current rotate-180 mr-1"></i>400</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">KRX 2025.07.21</p>
+                    <a href="#" class="flex items-center text-nhn-blue font-bold">more <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold leading-tight">Weaving New Play. NHN</h2>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-gray-600">We connect imagination with reality, technology with life, and foster connection among people.</p>
+            </div>
+        </section>
+
+        <section id="services-section" class="py-16 md:py-24 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div id="service-tabs" class="flex justify-center space-x-2 md:space-x-8 mb-12 border-b">
+                    <button class="service-tab active" data-tab="game">Game</button>
+                    <button class="service-tab" data-tab="paymentAd">Payment•Ad</button>
+                    <button class="service-tab" data-tab="commerce">Commerce</button>
+                    <button class="service-tab" data-tab="technology">Technology</button>
+                    <button class="service-tab" data-tab="contents">Contents</button>
+                </div>
+                <div id="service-content" class="relative">
+                    <div class="service-panel active" data-tab-content="game">
+                        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <div class="text-left">
+                                <h3 class="text-xl text-nhn-blue font-bold">Game</h3>
+                                <p class="text-3xl md:text-4xl font-bold mt-2 mb-8">A New Joy Connects<br>to Everyone</p>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 text-gray-600">
+                                    <a href="#" class="hover:underline">Hangame Poker PC&MOB</a><a href="#" class="hover:underline">Hangame Poker</a><a href="#" class="hover:underline">Hangame Double A Poker</a><a href="#" class="hover:underline">Mobile Hangame Sudda&Duelgo</a><a href="#" class="hover:underline">Hangame GoStop</a><a href="#" class="hover:underline">Hangame Baduk&Omok</a><a href="#" class="hover:underline">Hangame Janggi</a><a href="#" class="hover:underline">LINE : Disney Tsum Tsum</a><a href="#" class="hover:underline">Yo-kai Watch : Wibble Wobble</a><a href="#" class="hover:underline">LINE Pop 2</a><a href="#" class="hover:underline">Friends Pop</a><a href="#" class="hover:underline">Wooparoo Odyssey</a><a href="#" class="hover:underline">#COMPASS</a><a href="#" class="hover:underline">Guns Up! Mobile</a><a href="#" class="hover:underline">Hangame</a>
+                                </div>
+                            </div>
+                            <div class="relative h-64 md:h-96">
+                                <img src="https://www.nhn.com/_next/image?url=https%3A%2F%2Fstatic.nhnent.com%2Fstatic%2Fsite%2Fcorp%2Fimages%2Fmain%2FplayBanner001.png&w=3840&q=75" class="service-image" alt="Game">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-panel" data-tab-content="paymentAd">
+                         <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <div class="text-left">
+                                <h3 class="text-xl text-nhn-blue font-bold">Payment•Ad</h3>
+                                <p class="text-3xl md:text-4xl font-bold mt-2 mb-8">Easy and Convenient<br>Anywhere</p>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 text-gray-600">
+                                    <a href="#" class="hover:underline">PAYCO</a><a href="#" class="hover:underline">NHN KCP</a><a href="#" class="hover:underline">openads</a><a href="#" class="hover:underline">ACE eXchange</a>
+                                </div>
+                            </div>
+                            <div class="relative h-64 md:h-96">
+                                <img src="https://www.nhn.com/_next/image?url=https%3A%2F%2Fstatic.nhnent.com%2Fstatic%2Fsite%2Fcorp%2Fimages%2Fmain%2FplayBanner002.png&w=3840&q=75" class="service-image" alt="Payment•Ad">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-panel" data-tab-content="commerce">
+                        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <div class="text-left">
+                                <h3 class="text-xl text-nhn-blue font-bold">Commerce</h3>
+                                <p class="text-3xl md:text-4xl font-bold mt-2 mb-8">Connect to a<br>Wider World</p>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 text-gray-600">
+                                    <a href="#" class="hover:underline">godomall</a><a href="#" class="hover:underline">shop by</a><a href="#" class="hover:underline">GABANGPOP</a><a href="#" class="hover:underline">Residenza 725</a>
+                                </div>
+                            </div>
+                            <div class="relative h-64 md:h-96">
+                                <img src="https://www.nhn.com/_next/image?url=https%3A%2F%2Fstatic.nhnent.com%2Fstatic%2Fsite%2Fcorp%2Fimages%2Fmain%2FplayBanner003.png&w=3840&q=75" class="service-image" alt="Commerce">
+                            </div>
+                        </div>
+                    </div>
+                     <div class="service-panel" data-tab-content="technology">
+                        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <div class="text-left">
+                                <h3 class="text-xl text-nhn-blue font-bold">Technology</h3>
+                                <p class="text-3xl md:text-4xl font-bold mt-2 mb-8">Stable Business Enabled<br>with Flexibility</p>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 text-gray-600">
+                                    <a href="#" class="hover:underline">NHN Cloud</a><a href="#" class="hover:underline">Dooray!</a><a href="#" class="hover:underline">Dighty</a>
+                                </div>
+                            </div>
+                            <div class="relative h-64 md:h-96">
+                                <img src="https://www.nhn.com/_next/image?url=https%3A%2F%2Fstatic.nhnent.com%2Fstatic%2Fsite%2Fcorp%2Fimages%2Fmain%2FplayBanner004.png&w=3840&q=75" class="service-image" alt="Technology">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-panel" data-tab-content="contents">
+                        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <div class="text-left">
+                                <h3 class="text-xl text-nhn-blue font-bold">Contents</h3>
+                                <p class="text-3xl md:text-4xl font-bold mt-2 mb-8">Finding New Things<br>for Me</p>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 text-gray-600">
+                                    <a href="#" class="hover:underline">ticketlink</a><a href="#" class="hover:underline">Bugs</a><a href="#" class="hover:underline">comico & pocket comics</a><a href="#" class="hover:underline">Doctortour</a><a href="#" class="hover:underline">iam School</a><a href="#" class="hover:underline">PINK DIARY</a><a href="#" class="hover:underline">SMART SUBWAY</a>
+                                </div>
+                            </div>
+                            <div class="relative h-64 md:h-96">
+                                <img src="https://www.nhn.com/_next/image?url=https%3A%2F%2Fstatic.nhnent.com%2Fstatic%2Fsite%2Fcorp%2Fimages%2Fmain%2FplayBanner005.png&w=3840&q=75" class="service-image" alt="Contents">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                 <div class="text-center">
+                    <h2 class="text-3xl md:text-5xl font-bold leading-tight">Those Who Weave a New Play</h2>
+                    <p class="mt-4 text-lg text-gray-600">We act and execute without stop.</p>
+                     <a href="https://inside.nhn.com/" target="_blank" class="inline-block mt-8 text-lg font-bold border border-black px-6 py-3 hover:bg-black hover:text-white transition-colors">
+                        INSIDE NHN <i data-lucide="arrow-right" class="inline-block w-5 h-5 ml-2"></i>
+                     </a>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <a href="#" class="group block">
+                        <div class="overflow-hidden"><img src="https://www.nhn.com/_next/image?url=https%3A%2F%2Fwww.nhn.com%2Fbrand_%2Fstoryboard%2F2025%2F202506161730031.png&w=3840&q=75" alt="WE! FAMILY" class="w-full h-auto group-hover:scale-105 transition-transform duration-300"></div>
+                        <div class="mt-4">
+                            <p class="text-nhn-blue font-bold">People&Culture</p>
+                            <h3 class="mt-2 text-xl font-bold group-hover:underline">WE! FAMILY 한 지붕 아래, 온 가족이 함께!</h3>
+                        </div>
+                    </a>
+                     <a href="#" class="group block">
+                        <div class="overflow-hidden"><img src="https://www.nhn.com/_next/image?url=https%3A%2F%2Fwww.nhn.com%2Fbrand_%2Fstoryboard%2F2025%2F202507151006401.jpg&w=3840&q=75" alt="Service story" class="w-full h-auto group-hover:scale-105 transition-transform duration-300"></div>
+                        <div class="mt-4">
+                            <p class="text-nhn-blue font-bold">Service</p>
+                            <h3 class="mt-2 text-xl font-bold group-hover:underline">종이 식권은 이제 그만! 점심도 나답게 골라 먹는 시대</h3>
+                        </div>
+                    </a>
+                     <a href="#" class="group block">
+                        <div class="overflow-hidden"><img src="https://www.nhn.com/_next/image?url=https%3A%2F%2Fwww.nhn.com%2Fbrand_%2Fstoryboard%2F2025%2F202506270931551.jpg&w=3840&q=75" alt="Corp story" class="w-full h-auto group-hover:scale-105 transition-transform duration-300"></div>
+                        <div class="mt-4">
+                            <p class="text-nhn-blue font-bold">Corp</p>
+                            <h3 class="mt-2 text-xl font-bold group-hover:underline">디지털 소외 없는 사회를 향해, NHN이 만드는 연결의 포용</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-50 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                 <p class="text-gray-500 text-sm mb-4 md:mb-0">&copy;NHN Corp. All rights reserved.</p>
+                 <div class="flex items-center space-x-4">
+                     <a href="#" class="text-sm font-bold">FAMILY SITE <i data-lucide="chevron-up" class="inline-block w-4 h-4"></i></a>
+                     <a href="#" class="text-sm font-bold">GLOBAL SITE <i data-lucide="chevron-up" class="inline-block w-4 h-4"></i></a>
+                     <div class="flex items-center space-x-3">
+                         <a href="https://www.youtube.com/channel/UCMEfq7bqJwujrM5oEEhhmYw" target="_blank" class="text-gray-500 hover:text-nhn-blue"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                         <a href="https://www.instagram.com/nhn_corp/" target="_blank" class="text-gray-500 hover:text-nhn-blue"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                         <a href="https://www.linkedin.com/company/nhncorp/" target="_blank" class="text-gray-500 hover:text-nhn-blue"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                         <a href="https://meetup.nhncloud.com/" target="_blank" class="text-gray-500 hover:text-nhn-blue"><i data-lucide="message-square" class="w-5 h-5"></i></a>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js" type="module"></script>
+</body>
+</html>

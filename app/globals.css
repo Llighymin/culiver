@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --green-whale: #69a894;
+        --nhn-black: #1B1B1B;
+    }
+
+    body {
+        font-family: var(--font-noto-sans-kr), var(--font-roboto), sans-serif;
+        color: var(--nhn-black);
+    }
+}
+
+@layer components {
+    .font-sans {
+        font-family: var(--font-noto-sans-kr), var(--font-roboto), sans-serif;
+    }
+
+    .text-green-whale {
+        color: var(--green-whale);
+    }
+
+    .nav-link {
+        position: relative;
+        padding: 0 4px;
+        transition: color 0.3s;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -28px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--green-whale);
+        transition: width 0.3s ease-in-out;
+    }
+
+    .nav-item:hover .nav-link {
+        color: var(--green-whale);
+    }
+
+    .nav-item:hover .nav-link::after {
+        width: 100%;
+    }
+}

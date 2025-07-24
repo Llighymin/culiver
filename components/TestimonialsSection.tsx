@@ -1,0 +1,72 @@
+'use client';
+
+import { ArrowRight } from "lucide-react";
+
+const TestimonialsSection = () => {
+  const stories = [
+    {
+      category: "People&Culture",
+      title: "그린웨일의 사람과 문화",
+      image:
+        "https://www.gicon.or.kr/galleryImgView.es?bid=0001&list_no=1285&seq=5",
+    },
+    {
+      category: "Service",
+      title: "그린웨일이 제공하는 서비스",
+      image:
+        "https://www.gicon.or.kr/galleryImgView.es?bid=0001&list_no=1285&seq=5",
+    },
+    {
+      category: "Corp",
+      title: "그린웨일의 기업 이야기",
+      image:
+        "https://www.gicon.or.kr/galleryImgView.es?bid=0001&list_no=1285&seq=5",
+    },
+  ];
+
+  return (
+    <section className="py-16 md:py-24">
+      <div className="container mx-auto px-6">
+        <div className="text-center">
+          <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+            Green Whale Stories
+          </h2>
+          <p className="mt-4 text-lg text-gray-600">
+            그린웨일은 상상과 현실, 기술과 삶을 연결하고 사람들 간의
+            연결을 만들어갑니다.
+          </p>
+          <a
+            href="#"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="inline-block mt-8 text-lg font-bold border border-black px-6 py-3 hover:bg-black hover:text-white transition-colors"
+          >
+            News{" "}
+            <ArrowRight className="inline-block w-5 h-5 ml-2" />
+          </a>
+        </div>
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {stories.map((story, index) => (
+            <a key={index} href="#" className="group block">
+              <div className="overflow-hidden">
+                <img
+                  src={story.image}
+                  alt={story.title}
+                  className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="mt-4">
+                <p className="text-primary-blue font-bold">{story.category}</p>
+                <h3 className="mt-2 text-xl font-bold group-hover:underline">
+                  {story.title}
+                </h3>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TestimonialsSection;
