@@ -10,14 +10,11 @@ export default function SolutionHero() {
     >
       <div className="container mx-auto px-4 text-center w-full">
         <h1 className="text-5xl md:text-6xl font-bold mb-6">
-          ONE-STOP 환경 솔루션
+          사업영역
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-          업종별 맞춤형 솔루션으로 폐기물 처리의 모든 고민을 해결합니다
+          컬리버는 지속 가능한 수산양식과 바이오 기술을 통해 글로벌 식량 문제 해결에 기여합니다.
         </p>
-        <div className="text-lg md:text-xl text-[#4CAF50] font-semibold">
-          설계부터 설치, 운영, 관리까지 모든 서비스를 제공
-        </div>
       </div>
     </section>
   );

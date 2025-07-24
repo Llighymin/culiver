@@ -8,9 +8,9 @@ const navLinks = [
   { href: "/solutions", label: "사업영역" },
   { href: "/products", label: "제품소개" },
   { href: "/cases", label: "기술력" },
-  { href: "/contact", label: "지속가능경영" },
-  { href: "/contact", label: "홍보" },
-  { href: "/contact", label: "IR" },
+  { href: "/esg", label: "지속가능경영" },
+  { href: "/pr", label: "홍보" },
+  { href: "/ir", label: "IR" },
 ];
 
 const Header = () => {

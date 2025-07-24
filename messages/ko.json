@@ -1,0 +1,17 @@
+{
+  "Header": {
+    "company": "회사소개",
+    "solutions": "솔루션",
+    "products": "제품",
+    "esg": "ESG",
+    "pr": "홍보센터",
+    "ir": "투자정보",
+    "login": "로그인"
+  },
+  "Footer": {
+    "address": "주소: 대한민국 서울특별시 강남구 테헤란로 123",
+    "phone": "전화: 02-1234-5678",
+    "email": "이메일: contact@culiver.com",
+    "copyright": "© 2024 Culiver Inc. All rights reserved."
+  }
+}

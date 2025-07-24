@@ -10,7 +10,7 @@ export default function ProductHero() {
     >
       <div className="container mx-auto px-4 text-center w-full">
         <h1 className="text-5xl md:text-6xl font-bold mb-6">
-          회사소개
+          제품소개
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
           지속 가능한 친환경 농수산물 생산과 지역사회 상생을 통해 국내·외 시장을 선도하는 글로벌 새우양식 전문 기업입니다.

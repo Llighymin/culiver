@@ -1,0 +1,17 @@
+{
+  "Header": {
+    "company": "Company",
+    "solutions": "Solutions",
+    "products": "Products",
+    "esg": "ESG",
+    "pr": "PR",
+    "ir": "IR",
+    "login": "Login"
+  },
+  "Footer": {
+    "address": "Address: 123 Green Whale Way, Ocean Blue, Earth",
+    "phone": "Phone: +1 234 567 890",
+    "email": "Email: contact@culiver.com",
+    "copyright": "© 2024 Culiver Inc. All rights reserved."
+  }
+}
