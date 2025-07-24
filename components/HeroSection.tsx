@@ -5,16 +5,12 @@ import { useEffect, useState } from "react";
 const HeroSection = () => {
   const heroTitles = [
     {
-      title: "GREEN WHALE\nPNNP Co.",
-      subtitle: "Back to the GREEN in 24 hours, not 1 month.",
+      title: "지속가능한 새우양식의\n글로벌 리더",
+      subtitle: "친환경 농수산물 생산과 지역사회 상생을 통해 국내·외 시장을 선도하는 바이오테크 전문 기업",
     },
     {
-      title: "그린웨일 주식회사",
-      subtitle: "One-Stop 환경 솔루션 : 유기성 폐기물 소멸기술",
-    },
-    {
-      title: "유기성 폐기물 문제 해결",
-      subtitle: "처리대상 + 미생물 + 미생물활성제",
+      title: "Culiver",
+      subtitle: "바이오테크 전문 기업",
     },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -38,7 +34,7 @@ const HeroSection = () => {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
       >
-        <source src="/videos/greenwhale-bg-1.mp4" type="video/mp4" />
+        <source src="/videos/hero-bg.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-black/30"></div>
       <div className="absolute inset-0 flex items-center justify-start">

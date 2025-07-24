@@ -6,19 +6,19 @@ const TestimonialsSection = () => {
   const stories = [
     {
       category: "People&Culture",
-      title: "그린웨일의 사람과 문화",
+      title: "컬리버의 사람과 문화",
       image:
         "https://www.gicon.or.kr/galleryImgView.es?bid=0001&list_no=1285&seq=5",
     },
     {
       category: "Service",
-      title: "그린웨일이 제공하는 서비스",
+      title: "컬리버가 제공하는 서비스",
       image:
         "https://www.gicon.or.kr/galleryImgView.es?bid=0001&list_no=1285&seq=5",
     },
     {
       category: "Corp",
-      title: "그린웨일의 기업 이야기",
+      title: "컬리버의 기업 이야기",
       image:
         "https://www.gicon.or.kr/galleryImgView.es?bid=0001&list_no=1285&seq=5",
     },
@@ -29,10 +29,10 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center">
           <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-            Green Whale Stories
+            Culiver Stories
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            그린웨일은 상상과 현실, 기술과 삶을 연결하고 사람들 간의
+            컬리버는 상상과 현실, 기술과 삶을 연결하고 사람들 간의
             연결을 만들어갑니다.
           </p>
           <a

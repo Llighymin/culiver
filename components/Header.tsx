@@ -4,11 +4,13 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "/company", label: "COMPANY" },
-  { href: "/solutions", label: "SOLUTIONS" },
-  { href: "/products", label: "PRODUCTS" },
-  { href: "/cases", label: "CASES" },
-  { href: "/contact", label: "CONTACT" },
+  { href: "/company", label: "회사소개" },
+  { href: "/solutions", label: "사업영역" },
+  { href: "/products", label: "제품소개" },
+  { href: "/cases", label: "기술력" },
+  { href: "/contact", label: "지속가능경영" },
+  { href: "/contact", label: "홍보" },
+  { href: "/contact", label: "IR" },
 ];
 
 const Header = () => {
@@ -39,7 +41,7 @@ const Header = () => {
         className={`container mx-auto px-6 h-full flex justify-between items-center ${textClasses}`}
       >
         <Link href="/" className="flex items-center">
-          <p className="font-bold">GREEN WHALE</p>
+          <p className="font-bold">Culiver</p>
         </Link>
         <nav className="hidden lg:flex h-full items-center space-x-10 text-base font-bold">
           {navLinks.map((link) => (
@@ -54,10 +56,10 @@ const Header = () => {
           <div
             className={`hidden md:flex items-center space-x-4 text-sm ${langTextClasses}`}
           >
-            <a href="#" className="hover:text-green-whale">
+            <a href="#" className={`${activeLangTextClasses} font-bold`}>
               한국어
             </a>
-            <a href="#" className={`${activeLangTextClasses} font-bold`}>
+            <a href="#" className="hover:text-green-whale">
               English
             </a>
             <a href="#" className="hover:text-green-whale">

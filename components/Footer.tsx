@@ -1,95 +1,90 @@
 'use client';
 
-import { Youtube, Instagram, Linkedin, MessageSquare, ChevronUp } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const companyLinks = [
   { href: "/company", label: "회사소개" },
   { href: "/products", label: "제품소개" },
   { href: "/solutions", label: "솔루션" },
   { href: "/cases", label: "고객사례" },
-];
-
-const socialLinks = [
-  { href: "https://www.youtube.com/channel/UCMEfq7bqJwujrM5oEEhhmYw", label: "Youtube", icon: Youtube },
-  { href: "https://www.instagram.com/nhn_corp/", label: "Instagram", icon: Instagram },
-  { href: "https://www.linkedin.com/company/nhncorp/", label: "LinkedIn", icon: Linkedin },
-  { href: "https://meetup.nhncloud.com/", label: "Meetup", icon: MessageSquare },
+  { href: "/contact", label: "문의하기" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-bold mb-4 text-[#4CAF50]">
-              Green Whale
-            </div>
-            <p className="text-gray-300 mb-4">
-              신뢰할 수 있는 기술력으로 구현하는 가장 빠른 친환경 솔루션
-            </p>
-            <p className="text-gray-400 text-sm">
-              녹색의 우리 삶의 터전은 녹색 고래 그린웨일이 지키겠습니다!
-            </p>
+    <footer className="bg-gray-900 text-gray-300">
+      <div className="container mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div className="lg:col-span-5">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="text-3xl font-bold text-white mb-4">Culiver</div>
+              <p className="text-gray-400 mb-6 max-w-md">
+                첨단 기술과 친환경 솔루션으로 지속가능한 수산양식의 미래를
+                선도합니다.
+              </p>
+            </motion.div>
           </div>
 
-          <div>
-            <h3 className="text-lg font-semibold mb-4">회사정보</h3>
-            <ul className="space-y-2 text-sm">
-              {companyLinks.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-gray-300 hover:text-white">{link.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-4">고객지원</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/contact" className="text-gray-300 hover:text-white">문의하기</Link></li>
-              <li className="text-gray-300">기술지원: 1588-0000</li>
-              <li className="text-gray-300">이메일: info@greenwhale.co.kr</li>
-            </ul>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="col-span-2 md:col-span-2"
+            >
+              <h3 className="text-lg font-semibold text-white mb-4">
+                주식회사 컬리버
+              </h3>
+              <div className="text-sm space-y-3 text-gray-400">
+                <p>
+                    주소: 전라남도 순천시 태봉길 3, 4층 401호
+                </p>
+                <p>
+                  
+                    대표: 김정석
+                  
+                </p>
+                <p>
+                  
+                    사업자등록번호: 010-3620-6922
+                  
+                </p>
+                <p>
+                  
+                    연락처: 061-123-4567 | contact@culiver.com
+                  
+                </p>
+              </div>
+            </motion.div>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
-            © 2024 그린웨일 주식회사. All rights reserved.
+        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center">
+          <p className="text-gray-500 text-sm text-center sm:text-left">
+            © {new Date().getFullYear()} Culiver Inc. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="text-gray-400 hover:text-white text-sm">개인정보처리방침</Link>
-            <Link href="/terms" className="text-gray-400 hover:text-white text-sm">이용약관</Link>
+          <div className="flex space-x-6 mt-4 sm:mt-0">
+            <Link
+              href="/privacy"
+              className="text-gray-500 hover:text-white text-sm transition-colors duration-300"
+            >
+              개인정보처리방침
+            </Link>
+            <Link
+              href="/terms"
+              className="text-gray-500 hover:text-white text-sm transition-colors duration-300"
+            >
+              이용약관
+            </Link>
           </div>
         </div>
-
-        <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center space-x-4">
-            <Link href="#" className="text-sm font-bold text-gray-400 hover:text-white flex items-center gap-1">
-              FAMILY SITE <ChevronUp className="w-4 h-4" />
-            </Link>
-            <Link href="#" className="text-sm font-bold text-gray-400 hover:text-white flex items-center gap-1">
-              GLOBAL SITE <ChevronUp className="w-4 h-4" />
-            </Link>
-          </div>
-          <div className="flex items-center space-x-3 mt-4 md:mt-0">
-            {socialLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Visit our ${link.label}`}
-                className="text-gray-400 hover:text-white"
-              >
-                <link.icon className="w-5 h-5" />
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
+      
     </footer>
   );
 }
