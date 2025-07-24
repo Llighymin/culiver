@@ -3,7 +3,7 @@
 export default function SolutionHero() {
   return (
     <section 
-      className="relative h-screen flex items-center justify-center text-white bg-cover bg-center"
+      className="relative h-[400px] flex items-center justify-center text-white bg-cover bg-center"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 66, 122, 0.8), rgba(0, 66, 122, 0.8)), url('https://readdy.ai/api/search-image?query=Comprehensive%20waste%20management%20solutions%20across%20various%20industries%2C%20multiple%20business%20facilities%20connected%20by%20green%20technology%2C%20sustainable%20waste%20processing%20network%2C%20modern%20environmental%20solutions%2C%20integrated%20eco-friendly%20systems&width=1920&height=1080&seq=solution-hero&orientation=landscape')`
       }}

@@ -1,5 +1,3 @@
-'use client';
-
 import SolutionHero from './SolutionHero';
 import Industrysolutions from './IndustrySolutions';
 import ProcessFlow from './ProcessFlow';
