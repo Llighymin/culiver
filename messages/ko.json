@@ -13,7 +13,7 @@
     "address": "주소: 대한민국 서울특별시 강남구 테헤란로 123",
     "phone": "전화: 02-1234-5678",
     "email": "이메일: contact@culiver.com",
-    "copyright": "© 2024 Culiver Inc. All rights reserved."
+    "copyright": "© 2025 Culiver Inc. All rights reserved."
   },
   "HomePage": {
     "hero": {
@@ -23,40 +23,130 @@
     "about": {
       "title": "컬리버 소개",
       "description": "컬리버는 지속 가능한 양식 솔루션을 전문으로 하는 선도적인 해양 생명공학 회사입니다. 환경에 미치는 영향을 최소화하면서 수생 생물의 건강을 개선하는 혁신적인 제품을 개발합니다."
-    },
-    "products": {
-      "title": "제품 소개",
-      "viewAll": "모든 제품 보기"
-    },
-    "technology": {
-      "title": "기술력",
-      "description": "특허받은 생명공학 기술로 환경 지속가능성을 보장하면서 양식 생산성을 향상시킵니다."
-    },
-    "testimonials": {
-      "title": "고객 후기"
     }
   },
-  "CompanyPage": {
-    "hero": {
-      "title": "회사 소개",
-      "subtitle": "해양 생명공학 분야의 혁신을 이끌어갑니다"
+  "AboutSection": {
+    "tagline": "첨단 기술과 친환경 솔루션",
+    "title": "핵심 사업 영역",
+    "description": "컬리버는 첨단 기술과 친환경 솔루션을 통해 수산양식 산업의 지속가능한 발전을 이끌어갑니다.",
+    "viewmore": "더보기",
+    "services": [
+      {
+        "title": "흰다리새우 양식",
+        "description": "최적화된 환경에서 고품질 흰다리새우를 생산하는 첨단 양식 시스템을 제공합니다. 질병 관리부터 성장 최적화까지 전 과정을 관리합니다.",
+        "alt": "흰다리새우 양식"
+      },
+      {
+        "title": "보조사료(미생물제제)",
+        "description": "수질 개선과 면역력 강화를 위한 미생물 제제를 개발 및 공급합니다. 유해균 억제와 소화 효율 증진에 탁월한 효과가 있습니다.",
+        "alt": "보조사료(미생물제제)"
+      },
+      {
+        "title": "스마트양식장 솔루션",
+        "description": "IoT 기반의 실시간 모니터링 시스템과 자동화 솔루션으로 양식장 운영을 최적화합니다. 수질, 급이, 질병 관리를 통합적으로 제어합니다.",
+        "alt": "스마트양식장 솔루션"
+      }
+    ]
+  },
+  "TechnologyHighlights": {
+    "topSection": {
+      "tagline": "TECHNOLOGY",
+      "title": "기술력으로 입증하는 혁신",
+      "description": "지속적인 연구개발을 통해 수산양식 분야의 기술적 혁신을 선도합니다."
     },
-    "vision": {
-      "title": "비전",
-      "description": "혁신적인 생명공학을 통해 지속 가능한 해양 생태계를 만듭니다."
+    "stats": [
+      {
+        "number": 15,
+        "label": "특허 및 지식재산권",
+        "description": "혁신적인 기술력을 바탕으로 다수의 특허를 보유하고 있습니다.",
+        "icon": "ri-award-line"
+      },
+      {
+        "number": 10,
+        "label": "연구개발 프로젝트",
+        "description": "지속적인 R&D 투자로 미래 기술을 선도합니다.",
+        "icon": "ri-flask-line"
+      },
+      {
+        "number": 25,
+        "label": "기술 파트너십",
+        "description": "국내외 유수 기업 및 기관과 협력하고 있습니다.",
+        "icon": "ri-team-line"
+      },
+      {
+        "number": 5,
+        "label": "연구시설",
+        "description": "최첨단 연구 시설을 통해 기술 혁신을 가속화합니다.",
+        "icon": "ri-building-line"
+      }
+    ],
+    "technologies": {
+      "title": "핵심 기술 역량",
+      "description": "컬리버는 혁신적인 기술을 통해 지속 가능한 미래를 만들어갑니다.",
+      "items": [
+        {
+          "title": "바이오플락 양식 기술",
+          "description": "미생물을 활용한 친환경 양식 시스템으로 수질 개선과 생산성 향상을 동시에 실현",
+          "alt": "바이오플락 양식 기술"
+        },
+        {
+          "title": "복합 유용 미생물 개발",
+          "description": "새우 양식용 특화 프로바이오틱스로 면역력 강화와 성장 촉진 효과 제공",
+          "alt": "복합 유용 미생물 개발"
+        },
+        {
+          "title": "스마트 양식 시스템",
+          "description": "IoT와 AI 기술을 접목한 자동화 양식 관리 시스템으로 최적의 양식 환경 조성",
+          "alt": "스마트 양식 시스템"
+        }
+      ]
     },
-    "ceo": {
-      "title": "CEO 메시지",
-      "name": "김대표",
-      "position": "대표이사"
-    },
-    "history": {
-      "title": "회사 연혁",
-      "founded": "2015년 설립"
-    },
-    "team": {
-      "title": "팀 소개",
-      "description": "우리의 성공을 이끄는 전문가들을 만나보세요"
-    }
+    "viewMoreButton": "더 많은 기술 보기"
+  },
+  "ProductsSection": {
+    "title": "스마트양식장의 혁신적 특징",
+    "description": "컬리버의 스마트양식 시스템은 최첨단 IoT 기술과 빅데이터 분석을 통해 양식 환경을 최적화하고 생산성을 극대화합니다.",
+    "products": [
+      {
+        "title": "실시간 수질 모니터링",
+        "description": "pH, 용존산소, 온도, 염도 등 핵심 수질 지표를 24시간 실시간으로 모니터링하고 이상 징후 발생 시 즉시 알림을 제공합니다."
+      },
+      {
+        "title": "자동 급이 시스템",
+        "description": "AI 기반 알고리즘으로 새우의 성장 단계와 활동량에 따라 최적의 사료 공급량과 주기를 자동으로 조절합니다."
+      },
+      {
+        "title": "질병 예방 및 조기 경보",
+        "description": "빅데이터 분석을 통해 질병 발생 패턴을 예측하고, 이상 징후 감지 시 선제적 대응 방안을 제시합니다."
+      },
+      {
+        "title": "클라우드 기반 원격 제어",
+        "description": "언제 어디서나 모바일 기기를 통해 양식장 상태를 확인하고 원격으로 시스템을 제어할 수 있습니다."
+      }
+    ]
+  },
+  "TestimonialsSection": {
+    "title": "Culiver Stories",
+    "description": "컬리버는 상상과 현실, 기술과 삶을 연결하고 사람들 간의 연결을 만들어갑니다.",
+    "newsButton": "News",
+    "stories": [
+      {
+        "category": "People&Culture",
+        "title": "컬리버의 사람과 문화"
+      },
+      {
+        "category": "Service",
+        "title": "컬리버가 제공하는 서비스"
+      },
+      {
+        "category": "Corp",
+        "title": "컬리버의 기업 이야기"
+      }
+    ]
+  },
+  "CTASection": {
+    "title": "We connect imagination with reality",
+    "description": "우리는 상상력과 현실을 연결하고, 기술과 삶을 연결하며, 사람들 간의 연결을 촉진합니다.",
+    "buttonText": "상담 신청"
   }
 }

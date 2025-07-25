@@ -13,7 +13,7 @@
     "address": "住所: 〒123-4567 東京都渋谷区青山1-2-3",
     "phone": "電話: 03-1234-5678",
     "email": "メール: contact@culiver.com",
-    "copyright": "© 2024 Culiver Inc. All rights reserved."
+    "copyright": "© 2025 Culiver Inc. All rights reserved."
   },
   "HomePage": {
     "hero": {
@@ -23,40 +23,130 @@
     "about": {
       "title": "Culiverについて",
       "description": "Culiverは、持続可能な養殖ソリューションを専門とする先進的な海洋バイオテクノロジー企業です。環境への影響を最小限に抑えながら、水生生物の健康を向上させる革新的な製品を開発しています。"
-    },
-    "products": {
-      "title": "製品紹介",
-      "viewAll": "すべての製品を見る"
-    },
-    "technology": {
-      "title": "技術",
-      "description": "特許取得済みのバイオテクノロジーにより、環境の持続可能性を確保しながら養殖生産性を向上させます。"
-    },
-    "testimonials": {
-      "title": "お客様の声"
     }
   },
-  "CompanyPage": {
-    "hero": {
-      "title": "会社紹介",
-      "subtitle": "海洋バイオテクノロジーの革新をリード"
+  "AboutSection": {
+    "tagline": "先端技術とエコフレンドリーなソリューション",
+    "title": "主要事業分野",
+    "description": "Culiverは先端技術とエコフレンドリーなソリューションを通じて、水産養殖産業の持続可能な発展をリードします。",
+    "viewmore": "詳細を見る",
+    "services": [
+      {
+        "title": "バナメイエビの養殖",
+        "description": "最適化された環境で高品質なバナメイエビを生産する先端養殖システムを提供します。疾病管理から成長最適化まで全工程を管理します。",
+        "alt": "バナメイエビの養殖"
+      },
+      {
+        "title": "補助飼料（微生物製剤）",
+        "description": "水質改善と免疫力強化のための微生物製剤を開発・供給します。有害菌の抑制と消化効率向上に優れた効果があります。",
+        "alt": "補助飼料（微生物製剤）"
+      },
+      {
+        "title": "スマート養殖ソリューション",
+        "description": "IoTベースのリアルタイムモニタリングシステムと自動化ソリューションで養殖場運営を最適化します。水質、給餌、疾病管理を統合的に制御します。",
+        "alt": "スマート養殖ソリューション"
+      }
+    ]
+  },
+  "TechnologyHighlights": {
+    "topSection": {
+      "tagline": "TECHNOLOGY",
+      "title": "技術力で証明するイノベーション",
+      "description": "継続的な研究開発を通じて水産養殖分野の技術革新をリードします。"
     },
-    "vision": {
-      "title": "ビジョン",
-      "description": "革新的なバイオテクノロジーを通じて持続可能な海洋生態系を創造します。"
+    "stats": [
+      {
+        "number": 15,
+        "label": "特許と知的財産権",
+        "description": "革新的な技術力をもとに多数の特許を保有しています。",
+        "icon": "ri-award-line"
+      },
+      {
+        "number": 10,
+        "label": "研究開発プロジェクト",
+        "description": "継続的なR&D投資で未来技術をリードします。",
+        "icon": "ri-flask-line"
+      },
+      {
+        "number": 25,
+        "label": "技術パートナーシップ",
+        "description": "国内外の優れた企業や機関と協力しています。",
+        "icon": "ri-team-line"
+      },
+      {
+        "number": 5,
+        "label": "研究施設",
+        "description": "最先端研究施設を通じて技術革新を加速させます。",
+        "icon": "ri-building-line"
+      }
+    ],
+    "technologies": {
+      "title": "核心技術能力",
+      "description": "Culiverは革新的な技術を通じて持続可能な未来を創造します。",
+      "items": [
+        {
+          "title": "バイオフロック養殖技術",
+          "description": "微生物を活用した環境に優しい養殖システムで水質改善と生産性向上を同時に実現",
+          "alt": "バイオフロック養殖技術"
+        },
+        {
+          "title": "複合有用微生物の開発",
+          "description": "エビ養殖用の特化したプロバイオティクスで免疫力強化と成長促進効果を提供",
+          "alt": "複合有用微生物の開発"
+        },
+        {
+          "title": "スマート養殖システム",
+          "description": "IoTとAI技術を融合した自動化養殖管理システムで最適な養殖環境を構築",
+          "alt": "スマート養殖システム"
+        }
+      ]
     },
-    "ceo": {
-      "title": "CEOメッセージ",
-      "name": "山田太郎",
-      "position": "代表取締役CEO"
-    },
-    "history": {
-      "title": "会社の歴史",
-      "founded": "2015年設立"
-    },
-    "team": {
-      "title": "チーム紹介",
-      "description": "私たちの成功を導く専門家たちをご紹介します"
-    }
+    "viewMoreButton": "より多くの技術を見る"
+  },
+  "ProductsSection": {
+    "title": "スマート養殖場の革新的な特徴",
+    "description": "Culiverのスマート養殖システムは、最先端IoT技術とビッグデータ分析により、養殖環境を最適化し、生産性を最大化します。",
+    "products": [
+      {
+        "title": "リアルタイム水質モニタリング",
+        "description": "pH、溶存酸素、温度、塩分などの重要な水質指標を24時間リアルタイムでモニタリングし、異常の発生時には即座に通知を提供します。"
+      },
+      {
+        "title": "自動給餌システム",
+        "description": "AIベースのアルゴリズムにより、エビの成長段階と活動量に応じて最適な飼料供給量と周期を自動的に調整します。"
+      },
+      {
+        "title": "疾病予防と早期警報",
+        "description": "ビッグデータ分析により疾病発生パターンを予測し、異常兆候検知時に先制的な対応策を提示します。"
+      },
+      {
+        "title": "クラウドベースのリモートコントロール",
+        "description": "いつでもどこからでもモバイル機器を通じて養殖場の状態を確認し、システムをリモートで制御することができます。"
+      }
+    ]
+  },
+  "TestimonialsSection": {
+    "title": "Culiver Stories",
+    "description": "Culiverは想像と現実、技術と生活をつなぎ、人々の間の繋がりを創造します。",
+    "newsButton": "ニュース",
+    "stories": [
+      {
+        "category": "People&Culture",
+        "title": "Culiverの人と文化"
+      },
+      {
+        "category": "Service",
+        "title": "Culiverが提供するサービス"
+      },
+      {
+        "category": "Corp",
+        "title": "Culiverの企業ストーリー"
+      }
+    ]
+  },
+  "CTASection": {
+    "title": "We connect imagination with reality",
+    "description": "私たちは想像力と現実、技術と生活をつなぎ、人々の間の繋がりを促進します。",
+    "buttonText": "相談申し込み"
   }
 }

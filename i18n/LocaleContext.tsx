@@ -9,7 +9,7 @@ type LocaleContextType = {
   messages: Record<string, any>;
 };
 
-const LocaleContext = createContext<LocaleContextType | undefined>(undefined);
+export const LocaleContext = createContext<LocaleContextType | undefined>(undefined);
 
 export function LocaleProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
