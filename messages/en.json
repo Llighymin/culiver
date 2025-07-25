@@ -3,6 +3,7 @@
     "company": "Company",
     "solutions": "Solutions",
     "products": "Products",
+    "cases": "Technology",
     "esg": "ESG",
     "pr": "PR",
     "ir": "IR",
@@ -13,5 +14,49 @@
     "phone": "Phone: +1 234 567 890",
     "email": "Email: contact@culiver.com",
     "copyright": "© 2024 Culiver Inc. All rights reserved."
+  },
+  "HomePage": {
+    "hero": {
+      "title": "Sustainable Aquaculture Solutions",
+      "subtitle": "Creating a better future for marine ecosystems"
+    },
+    "about": {
+      "title": "About Culiver",
+      "description": "Culiver is a leading marine biotechnology company specializing in sustainable aquaculture solutions. We develop innovative products that improve aquatic health while minimizing environmental impact."
+    },
+    "products": {
+      "title": "Our Products",
+      "viewAll": "View All Products"
+    },
+    "technology": {
+      "title": "Our Technology",
+      "description": "Our patented biotechnology enhances aquaculture productivity while ensuring environmental sustainability."
+    },
+    "testimonials": {
+      "title": "What Our Clients Say"
+    }
+  },
+  "CompanyPage": {
+    "hero": {
+      "title": "About Culiver",
+      "subtitle": "Leading Innovation in Marine Biotechnology"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "Creating sustainable marine ecosystems through innovative biotechnology."
+    },
+    "ceo": {
+      "title": "CEO's Message",
+      "name": "John Smith",
+      "position": "CEO & Founder"
+    },
+    "history": {
+      "title": "Company History",
+      "founded": "Founded in 2015"
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "Meet the experts behind our success"
+    }
   }
 }

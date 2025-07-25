@@ -2,20 +2,30 @@
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { useTranslation } from "@/i18n/LocaleContext";
+import { usePathname } from "next/navigation";
+import { i18n, createPathWithLocale, getLocaleFromPath } from "@/i18n.config.js";
+import LanguageSelector from "./LanguageSelector";
 
-const navLinks = [
-  { href: "/company", label: "회사소개" },
-  { href: "/solutions", label: "사업영역" },
-  { href: "/products", label: "제품소개" },
-  { href: "/cases", label: "기술력" },
-  { href: "/esg", label: "지속가능경영" },
-  { href: "/pr", label: "홍보" },
-  { href: "/ir", label: "IR" },
-];
+// 이제 navLinks는 동적으로 생성됩니다
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useTranslation();
+  const pathname = usePathname();
+  const locale = getLocaleFromPath(pathname);
+  
+  // 다국어로 네비게이션 링크 생성
+  const navLinks = [
+    { href: "/company", label: t('Header.company') },
+    { href: "/solutions", label: t('Header.solutions') },
+    { href: "/products", label: t('Header.products') },
+    { href: "/cases", label: t('Header.cases') },
+    { href: "/esg", label: t('Header.esg') },
+    { href: "/pr", label: t('Header.pr') },
+    { href: "/ir", label: t('Header.ir') },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,26 +56,17 @@ const Header = () => {
         <nav className="hidden lg:flex h-full items-center space-x-10 text-base font-bold">
           {navLinks.map((link) => (
             <div key={link.href} className="nav-item h-full flex items-center">
-              <Link href={link.href} className="nav-link">
+              <Link 
+                href={locale !== i18n.defaultLocale ? `/${locale}${link.href}` : link.href}
+                className="nav-link"
+              >
                 {link.label}
               </Link>
             </div>
           ))}
         </nav>
         <div className="flex items-center space-x-4">
-          <div
-            className={`hidden md:flex items-center space-x-4 text-sm ${langTextClasses}`}
-          >
-            <a href="#" className={`${activeLangTextClasses} font-bold`}>
-              한국어
-            </a>
-            <a href="#" className="hover:text-green-whale">
-              English
-            </a>
-            <a href="#" className="hover:text-green-whale">
-              日本語
-            </a>
-          </div>
+          <LanguageSelector className={langTextClasses} />
           <button
             id="mobile-menu-button"
             className="lg:hidden p-2"
@@ -81,7 +82,7 @@ const Header = () => {
             {navLinks.map((link) => (
               <Link
                 key={link.href}
-                href={link.href}
+                href={locale !== i18n.defaultLocale ? `/${locale}${link.href}` : link.href}
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >

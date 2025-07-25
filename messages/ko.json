@@ -1,9 +1,10 @@
 {
   "Header": {
     "company": "회사소개",
-    "solutions": "솔루션",
-    "products": "제품",
-    "esg": "ESG",
+    "solutions": "사업영역",
+    "products": "제품소개",
+    "cases": "기술력",
+    "esg": "지속가능경영",
     "pr": "홍보센터",
     "ir": "투자정보",
     "login": "로그인"
@@ -13,5 +14,49 @@
     "phone": "전화: 02-1234-5678",
     "email": "이메일: contact@culiver.com",
     "copyright": "© 2024 Culiver Inc. All rights reserved."
+  },
+  "HomePage": {
+    "hero": {
+      "title": "지속 가능한 양식 솔루션",
+      "subtitle": "해양 생태계를 위한 더 나은 미래를 만듭니다"
+    },
+    "about": {
+      "title": "컬리버 소개",
+      "description": "컬리버는 지속 가능한 양식 솔루션을 전문으로 하는 선도적인 해양 생명공학 회사입니다. 환경에 미치는 영향을 최소화하면서 수생 생물의 건강을 개선하는 혁신적인 제품을 개발합니다."
+    },
+    "products": {
+      "title": "제품 소개",
+      "viewAll": "모든 제품 보기"
+    },
+    "technology": {
+      "title": "기술력",
+      "description": "특허받은 생명공학 기술로 환경 지속가능성을 보장하면서 양식 생산성을 향상시킵니다."
+    },
+    "testimonials": {
+      "title": "고객 후기"
+    }
+  },
+  "CompanyPage": {
+    "hero": {
+      "title": "회사 소개",
+      "subtitle": "해양 생명공학 분야의 혁신을 이끌어갑니다"
+    },
+    "vision": {
+      "title": "비전",
+      "description": "혁신적인 생명공학을 통해 지속 가능한 해양 생태계를 만듭니다."
+    },
+    "ceo": {
+      "title": "CEO 메시지",
+      "name": "김대표",
+      "position": "대표이사"
+    },
+    "history": {
+      "title": "회사 연혁",
+      "founded": "2015년 설립"
+    },
+    "team": {
+      "title": "팀 소개",
+      "description": "우리의 성공을 이끄는 전문가들을 만나보세요"
+    }
   }
 }

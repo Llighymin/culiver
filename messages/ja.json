@@ -1,0 +1,62 @@
+{
+  "Header": {
+    "company": "会社紹介",
+    "solutions": "ソリューション",
+    "products": "製品",
+    "cases": "技術力",
+    "esg": "ESG",
+    "pr": "広報",
+    "ir": "IR",
+    "login": "ログイン"
+  },
+  "Footer": {
+    "address": "住所: 〒123-4567 東京都渋谷区青山1-2-3",
+    "phone": "電話: 03-1234-5678",
+    "email": "メール: contact@culiver.com",
+    "copyright": "© 2024 Culiver Inc. All rights reserved."
+  },
+  "HomePage": {
+    "hero": {
+      "title": "持続可能な養殖ソリューション",
+      "subtitle": "海洋生態系のためのより良い未来を創造する"
+    },
+    "about": {
+      "title": "Culiverについて",
+      "description": "Culiverは、持続可能な養殖ソリューションを専門とする先進的な海洋バイオテクノロジー企業です。環境への影響を最小限に抑えながら、水生生物の健康を向上させる革新的な製品を開発しています。"
+    },
+    "products": {
+      "title": "製品紹介",
+      "viewAll": "すべての製品を見る"
+    },
+    "technology": {
+      "title": "技術",
+      "description": "特許取得済みのバイオテクノロジーにより、環境の持続可能性を確保しながら養殖生産性を向上させます。"
+    },
+    "testimonials": {
+      "title": "お客様の声"
+    }
+  },
+  "CompanyPage": {
+    "hero": {
+      "title": "会社紹介",
+      "subtitle": "海洋バイオテクノロジーの革新をリード"
+    },
+    "vision": {
+      "title": "ビジョン",
+      "description": "革新的なバイオテクノロジーを通じて持続可能な海洋生態系を創造します。"
+    },
+    "ceo": {
+      "title": "CEOメッセージ",
+      "name": "山田太郎",
+      "position": "代表取締役CEO"
+    },
+    "history": {
+      "title": "会社の歴史",
+      "founded": "2015年設立"
+    },
+    "team": {
+      "title": "チーム紹介",
+      "description": "私たちの成功を導く専門家たちをご紹介します"
+    }
+  }
+}

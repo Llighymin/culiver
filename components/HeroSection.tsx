@@ -1,16 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslation } from "@/i18n/LocaleContext";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+  
   const heroTitles = [
     {
-      title: "지속가능한 새우양식의\n글로벌 리더",
-      subtitle: "친환경 농수산물 생산과 지역사회 상생을 통해 국내·외 시장을 선도하는 바이오테크 전문 기업",
+      title: t('HomePage.hero.title'),
+      subtitle: t('HomePage.hero.subtitle'),
     },
     {
       title: "Culiver",
-      subtitle: "바이오테크 전문 기업",
+      subtitle: t('HomePage.about.description'),
     },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);

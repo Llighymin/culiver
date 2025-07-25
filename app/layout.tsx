@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_KR, Roboto } from "next/font/google";
 import "./globals.css";
 import PageLayout from "@/components/PageLayout";
+import { LocaleProvider } from "@/i18n/LocaleContext";
 
 const notoSansKr = Noto_Sans_KR({
 	subsets: ["latin"],
@@ -30,7 +31,9 @@ export default function RootLayout({
 			<body
 				className={`${notoSansKr.variable} ${roboto.variable} font-sans text-nhn-black bg-white`}
 			>
-				<PageLayout>{children}</PageLayout>
+				<LocaleProvider>
+					<PageLayout>{children}</PageLayout>
+				</LocaleProvider>
 			</body>
 		</html>
 	);

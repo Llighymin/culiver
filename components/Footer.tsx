@@ -2,16 +2,25 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useTranslation } from "@/i18n/LocaleContext";
+import { usePathname } from "next/navigation";
+import { getLocaleFromPath, createPathWithLocale } from "@/i18n.config";
 
-const companyLinks = [
-  { href: "/company", label: "회사소개" },
-  { href: "/products", label: "제품소개" },
-  { href: "/solutions", label: "솔루션" },
-  { href: "/cases", label: "고객사례" },
-  { href: "/contact", label: "문의하기" },
-];
+// companyLinks는 이제 동적으로 생성됩니다
 
 export default function Footer() {
+  const { t } = useTranslation();
+  const pathname = usePathname();
+  const locale = getLocaleFromPath(pathname);
+  
+  const companyLinks = [
+    { href: "/company", label: t('Header.company') },
+    { href: "/products", label: t('Header.products') },
+    { href: "/solutions", label: t('Header.solutions') },
+    { href: "/cases", label: t('Header.cases') },
+    { href: "/pr", label: t('Header.pr') },
+  ];
+  
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-6 py-16">
@@ -43,22 +52,13 @@ export default function Footer() {
               </h3>
               <div className="text-sm space-y-3 text-gray-400">
                 <p>
-                    주소: 전라남도 순천시 태봉길 3, 4층 401호
+                    {t('Footer.address')}
                 </p>
                 <p>
-                  
-                    대표: 김정석
-                  
+                    {t('Footer.phone')}
                 </p>
                 <p>
-                  
-                    사업자등록번호: 010-3620-6922
-                  
-                </p>
-                <p>
-                  
-                    연락처: 061-123-4567 | contact@culiver.com
-                  
+                    {t('Footer.email')}
                 </p>
               </div>
             </motion.div>
@@ -67,7 +67,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm text-center sm:text-left">
-            © {new Date().getFullYear()} Culiver Inc. All rights reserved.
+            {t('Footer.copyright')}
           </p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <Link
