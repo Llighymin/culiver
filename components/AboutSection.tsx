@@ -11,6 +11,7 @@ interface ServiceItem {
   title: string;
   description: string;
   alt: string;
+  image: string;
 }
 
 // AboutSection에서 사용할 번역 타입 정의
@@ -32,16 +33,19 @@ const defaultTranslations: AboutSectionTranslations = {
       title: "흰다리새우 양식",
       description: "최적화된 환경에서 고품질 흰다리새우를 생산하는 첨단 양식 시스템을 제공합니다. 질병 관리부터 성장 최적화까지 전 과정을 관리합니다.",
       alt: "흰다리새우 양식",
+      image: "/images/about-1.jpeg",
     },
     {
       title: "보조사료(미생물제제)",
       description: "수질 개선과 면역력 강화를 위한 미생물 제제를 개발 및 공급합니다. 유해균 억제와 소화 효율 증진에 탁월한 효과가 있습니다.",
       alt: "보조사료(미생물제제)",
+      image: "/images/about-2.jpeg",
     },
     {
       title: "스마트양식장 솔루션",
       description: "IoT 기반의 실시간 모니터링 시스템과 자동화 솔루션으로 양식장 운영을 최적화합니다. 수질, 급이, 질병 관리를 통합적으로 제어합니다.",
       alt: "스마트양식장 솔루션",
+      image: "/images/about-3.jpeg",
     },
   ],
 };
@@ -103,10 +107,10 @@ const AboutSection = () => {
               </div>
               <div className="relative w-full h-56 mt-4">
                 <Image
-                  src="/images/product-1.png"
+                  src={service.image}
                   alt={service.alt}
                   fill
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: "cover" }}
                   className="transition-transform duration-500 group-hover:scale-105"
                 />
               </div>

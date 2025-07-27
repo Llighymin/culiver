@@ -15,7 +15,7 @@ const RDStatus = () => {
         '생산성 35% 향상 실증',
         '에너지 소비량 20% 절감 달성'
       ],
-      image: 'https://readdy.ai/api/search-image?query=Advanced%20biofloc%20system%20development%20with%20AI%20control%20panels%2C%20automated%20monitoring%20equipment%2C%20next-generation%20aquaculture%20technology%2C%20modern%20research%20laboratory%20environment&width=500&height=300&seq=research-1&orientation=landscape'
+      image: 'images/cases/research-1.jpeg'
     },
     {
       title: '새우 전용 프로바이오틱스 신제품 개발',
@@ -29,7 +29,7 @@ const RDStatus = () => {
         '면역력 40% 향상 효과 확인',
         '현장 실증 실험 진행 중'
       ],
-      image: 'https://readdy.ai/api/search-image?query=Probiotics%20development%20laboratory%20with%20bacterial%20cultures%2C%20fermentation%20equipment%2C%20microscopic%20analysis%2C%20specialized%20shrimp%20health%20research%2C%20clean%20scientific%20environment&width=500&height=300&seq=research-2&orientation=landscape'
+      image: 'images/cases/research-2.jpeg'
     },
     {
       title: '스마트 질병 진단 시스템',
@@ -43,7 +43,7 @@ const RDStatus = () => {
         '진단 시간 70% 단축',
         '상용화 제품 출시 완료'
       ],
-      image: 'https://readdy.ai/api/search-image?query=Smart%20disease%20diagnosis%20system%20with%20advanced%20medical%20equipment%2C%20real-time%20monitoring%20displays%2C%20automated%20testing%20devices%2C%20veterinary%20research%20laboratory&width=500&height=300&seq=research-3&orientation=landscape'
+      image: 'images/cases/research-3.jpeg'
     }
   ];
 

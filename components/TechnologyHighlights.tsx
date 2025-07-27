@@ -95,7 +95,7 @@ export default function TechnologyHighlights() {
     },
     {
       ...t.technologies.items[2],
-      image: '/images/양식장1.jpg'
+      image: '/images/about-3.jpeg',
     }
   ];
 

@@ -1,6 +1,7 @@
 "use client";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTranslation } from "@/i18n/LocaleContext";
 import { usePathname } from "next/navigation";
@@ -43,7 +44,8 @@ const Header = () => {
 
   const textClasses = scrolled ? "text-gray-800" : "text-white";
   const langTextClasses = scrolled ? "text-gray-500" : "text-white";
-  const activeLangTextClasses = scrolled ? "text-green-whale" : "text-white";
+  const activeLangTextClasses = scrolled ? "text-main-blue" : "text-white";
+  const logoFilter = scrolled ? "" : "brightness-0 invert";
 
   return (
     <header className={headerClasses}>
@@ -51,7 +53,14 @@ const Header = () => {
         className={`container mx-auto px-6 h-full flex justify-between items-center ${textClasses}`}
       >
         <Link href="/" className="flex items-center">
-          <p className="font-bold">Culiver</p>
+          <Image
+            src="/images/culiver_logo.png"
+            alt="Culiver"
+            width={120}
+            height={24}
+            priority
+            className={logoFilter}
+          />
         </Link>
         <nav className="hidden lg:flex h-full items-center space-x-10 text-base font-bold">
           {navLinks.map((link) => (

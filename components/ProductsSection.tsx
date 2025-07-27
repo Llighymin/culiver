@@ -65,10 +65,10 @@ const ProductsSection = () => {
 
 	// 이미지 URL은 변경되지 않으므로 원본 유지
 	const imageUrls = [
-		"https://images.unsplash.com/photo-1488330890402-c221b23ad359?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"https://images.unsplash.com/photo-1535443120141-a9a79a032b4b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"https://images.unsplash.com/photo-1524601500432-1e1a4c71d692?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-		"https://images.unsplash.com/photo-1611095562057-2e70129d5803?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		"images/products-1.jpeg",
+		"images/products-2.jpeg",
+		"images/products-3.jpeg",
+		"images/products-4.jpeg",
 	];
 
 	// 번역된 제품 데이터와 고정된 이미지/아이콘 결합

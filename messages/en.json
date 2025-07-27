@@ -34,17 +34,20 @@
       {
         "title": "White Leg Shrimp Farming",
         "description": "We provide advanced farming systems for high-quality white leg shrimp production in optimized environments, managing everything from disease control to growth optimization.",
-        "alt": "White Leg Shrimp Farming"
+        "alt": "White Leg Shrimp Farming",
+        "image": "/images/about-1.jpeg"
       },
       {
         "title": "Probiotic Feed Supplements",
         "description": "We develop and supply microbial products for water quality improvement and immune enhancement, with excellent effects on harmful bacteria suppression and digestive efficiency.",
-        "alt": "Probiotic Feed Supplements"
+        "alt": "Probiotic Feed Supplements",
+        "image": "/images/about-2.jpeg"
       },
       {
         "title": "Smart Aquaculture Solutions",
         "description": "We optimize farm operations with IoT-based real-time monitoring systems and automation solutions, integrating water quality, feeding, and disease management.",
-        "alt": "Smart Aquaculture Solutions"
+        "alt": "Smart Aquaculture Solutions",
+        "image": "/images/about-3.jpeg"
       }
     ]
   },

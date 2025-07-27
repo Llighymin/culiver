@@ -4,7 +4,7 @@
 
 @layer base {
     :root {
-        --green-whale: #69a894;
+        --main-blue: #0f2e70;
         --nhn-black: #1B1B1B;
     }
 
@@ -19,8 +19,8 @@
         font-family: var(--font-noto-sans-kr), var(--font-roboto), sans-serif;
     }
 
-    .text-green-whale {
-        color: var(--green-whale);
+    .text-main-blue {
+        color: var(--main-blue);
     }
 
     .nav-link {
@@ -37,12 +37,12 @@
         bottom: -28px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: var(--green-whale);
+        background-color: var(--main-blue);
         transition: width 0.3s ease-in-out;
     }
 
     .nav-item:hover .nav-link {
-        color: var(--green-whale);
+        color: var(--main-blue);
     }
 
     .nav-item:hover .nav-link::after {

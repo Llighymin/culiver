@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslation } from "@/i18n/LocaleContext";
 import { usePathname } from "next/navigation";
@@ -32,7 +33,15 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="text-3xl font-bold text-white mb-4">Culiver</div>
+              <Link href="/" className="inline-block mb-4">
+                <Image
+                  src="/images/culiver_logo.png"
+                  alt="Culiver"
+                  width={140}
+                  height={28}
+                  className="brightness-0 invert"
+                />
+              </Link>
               <p className="text-gray-400 mb-6 max-w-md">
                 첨단 기술과 친환경 솔루션으로 지속가능한 수산양식의 미래를
                 선도합니다.
