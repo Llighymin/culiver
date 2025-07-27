@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_KR, Roboto } from "next/font/google";
 import "./globals.css";
+import "remixicon/fonts/remixicon.css";
 import PageLayout from "@/components/PageLayout";
 import { LocaleProvider } from "@/i18n/LocaleContext";
 

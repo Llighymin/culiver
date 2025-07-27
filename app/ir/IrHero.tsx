@@ -2,22 +2,19 @@ import React from 'react';
 
 const IrHero = () => {
   return (
-    <div className="relative bg-gray-800">
-      <div className="absolute inset-0">
-        <img
-          className="w-full h-full object-cover"
-          src="/images/ir-hero.jpg" // Placeholder image
-          alt="IR Hero Image"
-        />
-        <div className="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true" />
-      </div>
-      <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Investor Relations</h1>
-        <p className="mt-6 text-xl text-indigo-100 max-w-3xl">
+    <section
+      className="relative py-48 flex items-center justify-center text-white bg-cover bg-center"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/ir-hero.jpg')`,
+      }}
+    >
+      <div className="container mx-auto px-4 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Investor Relations</h1>
+        <p className="text-lg md:text-xl max-w-3xl mx-auto">
           Culiver의 투명한 경영 정보와 성장 가능성을 확인하세요.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
